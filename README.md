@@ -51,7 +51,7 @@ HunyuanVideo-1.5 is a video generation model that delivers top-tier quality with
 
 If you develop/use HunyuanVideo-1.5 in your projects, welcome to let us know.
 
-- **ComfyUI** - [ComfyUI](https://github.com/comfyanonymous/ComfyUI): A powerful and modular diffusion model GUI with a graph/nodes interface. ComfyUI supports HunyuanVideo-1.5 with various engineering optimizations for fast inference.
+- **ComfyUI** - [ComfyUI](https://github.com/comfyanonymous/ComfyUI): A powerful and modular diffusion model GUI with a graph/nodes interface. ComfyUI supports HunyuanVideo-1.5 with various engineering optimizations for fast inference. Workflow templates are hosted on [ComfyUI-Workflows-templates](https://github.com/Comfy-Org/workflow_templates/tree/main/templates).
 
 - **Community-implemented ComfyUI Plugin** - [comfyui_hunyuanvideo_1.5_plugin](https://github.com/yuanyuan-spec/comfyui_hunyuanvideo_1.5_plugin): A community-implemented ComfyUI plugin for HunyuanVideo-1.5, offering both simplified and complete node sets for quick usage or deep workflow customization, with built-in automatic model download support.
 

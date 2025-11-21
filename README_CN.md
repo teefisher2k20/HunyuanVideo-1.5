@@ -50,7 +50,7 @@ HunyuanVideo-1.5作为一款轻量级视频生成模型，仅需83亿参数即�
 
 如果您在项目中使用或开发了 HunyuanVideo-1.5，欢迎告知我们。
 
-- **ComfyUI** - [ComfyUI](https://github.com/comfyanonymous/ComfyUI): 一个强大且模块化的扩散模型图形界面，采用节点式工作流。ComfyUI 支持 HunyuanVideo-1.5，并提供多种工程加速优化以实现快速推理。
+- **ComfyUI** - [ComfyUI](https://github.com/comfyanonymous/ComfyUI): 一个强大且模块化的扩散模型图形界面，采用节点式工作流。ComfyUI 支持 HunyuanVideo-1.5，并提供多种工程加速优化以实现快速推理。工作流模板在 [ComfyUI-Workflows-templates](https://github.com/Comfy-Org/workflow_templates/tree/main/templates) 中。
 
 - **社区实现的 ComfyUI 插件** - [comfyui_hunyuanvideo_1.5_plugin](https://github.com/yuanyuan-spec/comfyui_hunyuanvideo_1.5_plugin): 社区实现的 HunyuanVideo-1.5 ComfyUI 插件，提供简化版和完整版节点集，支持快速使用或深度工作流定制，内置自动模型下载功能。
 
