@@ -326,3 +326,11 @@ GSB（Good/Same/Bad）评估法被广泛用于基于整体视频感知质量来�
 我们要感谢 [Transformers](https://github.com/huggingface/transformers), [Diffusers](https://github.com/huggingface/diffusers) , [HuggingFace](https://huggingface.co/) 以及 [Qwen-VL](https://github.com/QwenLM/Qwen-VL)的贡献者，感谢他们的公开研究和探索。
 
 ## 🌟 GitHub Star 历史
+
+<a href="https://star-history.com/#Tencent-Hunyuan/HunyuanVideo-1.5&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Tencent-Hunyuan/HunyuanVideo-1.5&type=Date1&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Tencent-Hunyuan/HunyuanVideo-1.5&type=Date1" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Tencent-Hunyuan/HunyuanVideo-1.5&type=Date1" />
+ </picture>
+</a>

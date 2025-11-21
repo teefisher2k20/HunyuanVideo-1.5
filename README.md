@@ -324,3 +324,11 @@ The GSB(Good/Same/Bad) approach is widely used to evaluate the relative performa
 We would like to thank the contributors to the [Transformers](https://github.com/huggingface/transformers), [Diffusers](https://github.com/huggingface/diffusers) , [HuggingFace](https://huggingface.co/) and [Qwen-VL](https://github.com/QwenLM/Qwen-VL), for their open research and exploration.
 
 ## 🌟 Github Star History
+
+<a href="https://star-history.com/#Tencent-Hunyuan/HunyuanVideo-1.5&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Tencent-Hunyuan/HunyuanVideo-1.5&type=Date1&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Tencent-Hunyuan/HunyuanVideo-1.5&type=Date1" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Tencent-Hunyuan/HunyuanVideo-1.5&type=Date1" />
+ </picture>
+</a>
