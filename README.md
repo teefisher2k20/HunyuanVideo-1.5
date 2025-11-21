@@ -37,9 +37,10 @@ HunyuanVideo-1.5 is a video generation model that delivers top-tier quality with
 ## 🔥🔥🔥 News
 👋 Nov 20, 2025: We release the inference code and model weights of HunyuanVideo.
 
+
 ## 🎥 Demo
 <div align="center">
-  <video src="./assets/demo/demo.mp4" width="70%"> </video>
+  <video src="https://github.com/user-attachments/assets/d45ec78e-ea40-47f1-8d4d-f4d9a0682e2d" width="60%"> </video>
 </div>
 
 ## 🧩 Community Contributions
