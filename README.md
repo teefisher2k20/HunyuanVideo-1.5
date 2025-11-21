@@ -258,17 +258,17 @@ torchrun --nproc_per_node=$N_INFERENCE_GPU generate.py \
 |ModelName| Download                     |
 |-|---------------------------| 
 |HunyuanVideo 1.5-480P-T2V|[480P-T2V](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/480p_t2v) |
-|HunyuanVideo 1.5-480p-I2V |[480p-I2V](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/480p_i2v) |
-|HunyuanVideo 1.5-480p-T2V-distill | [480p-T2V-distill](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/480p_t2v_distilled) |
-|HunyuanVideo 1.5-480p-I2V-distill |[480p-I2V-distill](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/480p_i2v_distilled) |
+|HunyuanVideo 1.5-480P-I2V |[480P-I2V](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/480p_i2v) |
+|HunyuanVideo 1.5-480P-T2V-distill | [480P-T2V-distill](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/480p_t2v_distilled) |
+|HunyuanVideo 1.5-480p-I2V-distill |[480P-I2V-distill](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/480p_i2v_distilled) |
 |HunyuanVideo 1.5-720P-T2V|[720P-T2V](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/720p_t2v) |
 |HunyuanVideo 1.5-720P-I2V |[720P-I2V](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/720p_i2v) |
 |HunyuanVideo 1.5-720P-T2V-distiill| Comming soon |
 |HunyuanVideo 1.5-720P-I2V-distiill |[720P-I2V-distiill](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/720p_i2v_distilled) |
 |HunyuanVideo 1.5-720P-T2V-sparse-distiill| Comming soon |
 |HunyuanVideo 1.5-720P-I2V-sparse-distiill |[720P-I2V-sparse-distiill](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/720p_i2v_distilled_sparse) |
-|HunyuanVideo 1.5-720p-sr |[720p-sr](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/720p_sr_distilled) |
-|HunyuanVideo 1.5-1080p-sr |[1080p-sr](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/1080p_sr_distilled) |
+|HunyuanVideo 1.5-720P-sr |[720P-sr](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/720p_sr_distilled) |
+|HunyuanVideo 1.5-1080P-sr |[1080P-sr](https://huggingface.co/tencent/HunyuanVideo-1.5/tree/main/transformer/1080p_sr_distilled) |
 
 
 
