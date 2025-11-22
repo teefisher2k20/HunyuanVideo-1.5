@@ -277,8 +277,8 @@ The following table provides the optimal inference configurations (CFG scale, em
 | 720p I2V Distilled | 1 | None | 7 | 50 |
 | 720p T2V Distilled Sparse | 1 | None | 7 | 50 |
 | 720p I2V Distilled Sparse | 1 | None | 9 | 50 |
-| 480→720 SR | - | None | 2 | 6 |
-| 720→1080 SR | 1 | - | 2 | 8 |
+| 480→720 SR | 1 | None | 2 | 6 |
+| 720→1080 SR | 1 | None | 2 | 8 |
 
 
 ## 🧱 Models Cards
