@@ -175,7 +175,7 @@ Download the pretrained models before generating videos. Detailed instructions a
 ### Prompt Writing Handbook
 Prompt enhancement plays a crucial role in enabling our model to generate high-quality videos. By writing longer and more detailed prompts, the generated video will be significantly improved. We encourage you to craft comprehensive and descriptive prompts to achieve the best possible video quality. we recommend community partners consulting our official guide on how to write effective prompts. 
 
-**Reference:** **[HunyuanVideo-1.5 Prompt Handbook](https://doc.weixin.qq.com/doc/w3_AXcAcwZSAGgCNACVygLxeQjyn4FYS?scode=AJEAIQdfAAoSfXnTj0AAkA-gaeACk)**
+**Reference:** **[HunyuanVideo-1.5 Prompt Handbook](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/assets/HunyuanVideo_1_5_Prompt_Handbook_EN.md)**
 
 ### System Prompts for Automatic Prompt Enhancement
 For users seeking to optimize prompts for other large models, it is recommended to consult the definition of `t2v_rewrite_system_prompt` in the file `hyvideo/utils/rewrite/t2v_prompt.py` to guide text-to-video rewriting. Similarly, for image-to-video rewriting, refer to the definition of `i2v_rewrite_system_prompt` in `hyvideo/utils/rewrite/i2v_prompt.py`.
