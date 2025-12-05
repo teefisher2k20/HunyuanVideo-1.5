@@ -4,7 +4,7 @@ This document provides detailed quality comparisons between the original 480p I2
 
 ## Overview
 
-The step-distilled model reduces inference steps from 50 to 8 while maintaining comparable visual quality. This document showcases side-by-side comparisons to demonstrate that the distillation process does not significantly degrade output quality.
+The step-distilled model reduces inference steps from 50 to 8 (or 12 steps recommended) while maintaining comparable visual quality to the original model. On RTX 4090, this achieves up to 75% reduction in end-to-end generation time, enabling a single RTX 4090 to generate videos within 75 seconds. This document showcases side-by-side comparisons to demonstrate that the distillation process does not significantly degrade output quality. For even faster generation, you can also try 4 steps, which provides faster speed with slightly reduced quality.
 
 ## Comparison Results
 
@@ -17,14 +17,10 @@ The following table shows side-by-side comparisons between the original 480p I2V
 
 
 
-
-
-
-
-
-
 ## Usage Notes
 
-- **8 steps**: Recommended default setting, provides the best balance between speed and quality
+- **8 or 12 steps**: Recommended default setting, provides the best balance between speed and quality
 - **4 steps**: Faster generation with slightly reduced quality, suitable for rapid prototyping
+
+Detailed usage instructions can be found in [Usage](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md#-usage).
 
