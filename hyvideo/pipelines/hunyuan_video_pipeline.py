@@ -178,6 +178,8 @@ class HunyuanVideo_1_5_Pipeline(DiffusionPipeline):
             "1080p": {"bucket_hw_base_size": 1440, "bucket_hw_bucket_stride": 16},
         }
 
+        self.noise_init_device = torch.device('cpu')
+
 
     @classmethod
     def _create_scheduler(cls, flow_shift):
@@ -467,7 +469,7 @@ class HunyuanVideo_1_5_Pipeline(DiffusionPipeline):
             )
 
         if latents is None:
-            latents = torch.randn(shape, generator=generator, device=torch.device('cpu'), dtype=dtype).to(device)
+            latents = torch.randn(shape, generator=generator, device=self.noise_init_device, dtype=dtype).to(device)
         else:
             latents = latents.to(device)
 
@@ -1029,7 +1031,7 @@ class HunyuanVideo_1_5_Pipeline(DiffusionPipeline):
                 seed = obj_list[0]
 
         if generator is None and seed is not None:
-            generator = torch.Generator(device=torch.device('cpu')).manual_seed(seed)
+            generator = torch.Generator(device=self.noise_init_device).manual_seed(seed)
 
         if reference_image is not None:
             if self.ideal_resolution is not None and target_resolution != self.ideal_resolution:
