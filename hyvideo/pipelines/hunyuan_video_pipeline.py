@@ -1078,7 +1078,7 @@ class HunyuanVideo_1_5_Pipeline(DiffusionPipeline):
                 f"Rewritten Prompt:          {prompt if prompt_rewrite else '<disabled>'}\n"
                 f"Aspect Ratio:              {aspect_ratio if task_type == 't2v' else f'{width}:{height}'}\n"
                 f"Video Length:              {video_length}\n"
-                f"Reference Image:           {user_reference_image} {reference_image.size}\n"
+                f"Reference Image:           {user_reference_image} {reference_image.size if reference_image is not None else ''}\n"
                 f"Guidance Scale:            {guidance_scale}\n"
                 f"Guidance Embedded Scale:   {embedded_guidance_scale}\n"
                 f"Shift:                     {flow_shift}\n"
