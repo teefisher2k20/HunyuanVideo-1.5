@@ -236,6 +236,22 @@ def all_to_all(
     return _AllToAll.apply(input_, group, scatter_dim, gather_dim)
 
 
+class _Reduce_Scatter(torch.autograd.Function):
+
+    @staticmethod
+    def forward(ctx, op, group, tensor, *input_tensor_list):
+        ctx.group = group
+        # Need contiguous tensors for collectives.
+        tensor = tensor.contiguous()
+        input_tensor_list = tuple(t.contiguous() for t in input_tensor_list)
+        dist.reduce_scatter(tensor, list(input_tensor_list), op=op, group=group)
+        return tensor
+
+    @staticmethod
+    def backward(ctx, grad_output):
+        return (None, None, None) + _AllGather.apply(ctx.group, grad_output)
+
+
 class _AllGather(torch.autograd.Function):
     """All-gather communication with autograd support.
 
@@ -277,6 +293,8 @@ class _AllGather(torch.autograd.Function):
 
         grad_input_list = torch.split(grad_output, sizes, dim=dim)
         grad_input = grad_input_list[rank]
+
+        grad_input = _Reduce_Scatter.apply(dist.ReduceOp.SUM, group, grad_input, *grad_input_list)
 
         return grad_input, None, None
 
