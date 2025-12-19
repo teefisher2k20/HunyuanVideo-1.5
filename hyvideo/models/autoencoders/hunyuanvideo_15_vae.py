@@ -17,6 +17,7 @@
 import math
 from dataclasses import dataclass
 from typing import Optional, Tuple, Union
+from contextlib import contextmanager
 
 import loguru
 import numpy as np
@@ -884,3 +885,14 @@ class AutoencoderKLConv3D(ModelMixin, ConfigMixin):
         z = posterior.sample() if sample_posterior else posterior.mode()
         dec = self.decode(z).sample
         return DecoderOutput(sample=dec, posterior=posterior) if return_dict else (dec, posterior)
+
+    @contextmanager
+    def memory_efficient_context(self):
+        original_use_slicing = self.use_slicing
+        original_use_spatial_tiling = self.use_spatial_tiling
+
+        self.enable_slicing()
+        self.enable_tiling()
+        yield
+        self.use_slicing = original_use_slicing
+        self.use_spatial_tiling = original_use_spatial_tiling

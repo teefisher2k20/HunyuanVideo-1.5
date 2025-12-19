@@ -1295,10 +1295,8 @@ class HunyuanVideo_1_5_Pipeline(DiffusionPipeline):
                 self.vae.enable_tile_parallelism()
 
             if return_pre_sr_video or not enable_sr:
-                with torch.autocast(device_type="cuda", dtype=self.vae_dtype, enabled=self.vae_autocast_enabled), auto_offload_model(self.vae, self.execution_device, enabled=self.enable_offloading):
-                    self.vae.enable_tiling()
+                with torch.autocast(device_type="cuda", dtype=self.vae_dtype, enabled=self.vae_autocast_enabled), auto_offload_model(self.vae, self.execution_device, enabled=self.enable_offloading), self.vae.memory_efficient_context():
                     video_frames = self.vae.decode(latents, return_dict=False, generator=generator)[0]
-                    self.vae.disable_tiling()
 
                 if video_frames is not None:
                     video_frames = (video_frames / 2 + 0.5).clamp(0, 1).cpu().float()

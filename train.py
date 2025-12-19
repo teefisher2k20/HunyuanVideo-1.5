@@ -582,7 +582,7 @@ class HunyuanVideoTrainer:
         if images.ndim == 4:
             images = images.unsqueeze(2)
         
-        with torch.no_grad(), torch.autocast(device_type="cuda", dtype=torch.float16):
+        with torch.no_grad(), torch.autocast(device_type="cuda", dtype=torch.float16), self.vae.memory_efficient_context():
             latents = self.vae.encode(images).latent_dist.sample()
             if hasattr(self.vae.config, "shift_factor") and self.vae.config.shift_factor:
                 latents = (latents - self.vae.config.shift_factor) * self.vae.config.scaling_factor
